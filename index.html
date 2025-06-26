@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maslakunnidzom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .background {
+      background: url('gerbang.jpg') no-repeat center center fixed;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      position: relative;
+      z-index: 1;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 30px;
+      padding: 40px 30px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .arabic {
+      font-size: 42px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #120101;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    h2 {
+      margin: 10px 0 30px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      padding: 14px 20px;
+      width: 100%;
+      margin-bottom: 15px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn.orange {
+      background-color: #2980B9;
+      color: #ffffff;
+    }
+
+    .btn.green {
+      background-color: #2ECC71;
+      color: #ffffff;
+    }
+
+    .btn i {
+      margin-right: 8px;
+    }
+
+    .skip {
+      margin-top: 10px;
+      color: #000000;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Wrapper untuk background dan blur -->
+  <div class="background-wrapper">
+    <div class="background"></div>
+    <div class="blur-overlay"></div>
+  </div>
+
+  <!-- Konten utama -->
+  <div class="wrapper">
+    <div class="container">
+      <div class="arabic">مسلك انظام</div>
+      <h2>MASLAKUNNIDZOM</h2>
+
+      <button class="btn orange" onclick="window.location.href='register.html'">
+        <i class="fas fa-user"></i> DAFTAR AKUN
+      </button>
+      <button class="btn green" onclick="window.location.href='login.html'">
+        <i class="fas fa-sign-in-alt"></i> LOGIN
+      </button>
+
+    </div>
+  </div>
+
+</body>
+</html>

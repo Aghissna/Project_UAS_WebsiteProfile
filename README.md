@@ -2,3 +2,7 @@
 ![Tampilan Login](login.png)
 ![Tampilan Dashboard](dashboard.png)
 ![Tampilan Register](register.png)
+![Tampilan navsantri](santri.png)
+![Tampilan navartikel](artikel.png)
+![Tampilan navvisimisi](visimisi.png)
+![Tampilan navkontak](kontak.png)

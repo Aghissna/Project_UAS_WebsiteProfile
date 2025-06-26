@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daftar Akun</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url('gerbang.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      backdrop-filter: blur(8px);
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: -1;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(6px);
+      padding: 25px 30px;
+      border-radius: 18px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      width: 100%;
+      max-width: 500px; /* Lebar ditingkatkan */
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin: 10px 0 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    label {
+      align-self: flex-start;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 4px;
+      font-size: 14px;
+      border: 1.5px solid #000;
+      border-radius: 5px;
+    }
+
+    .checkbox-container {
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      align-self: flex-start;
+      font-size: 13px;
+    }
+
+    .checkbox-container input {
+      margin-right: 8px;
+    }
+
+    .submit-btn {
+      margin-top: 18px;
+      width: 100%;
+      padding: 12px;
+      background-color: #ffffff;
+      color: #000;
+      font-weight: bold;
+      font-size: 14px;
+      border: 2px solid #000;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .login-link {
+      margin-top: 12px;
+      font-size: 13px;
+    }
+
+    .login-link a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        max-width: 90%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="logo.png" alt="Logo" class="logo" />
+    <h2>DAFTAR AKUN</h2>
+    <form action="register.php" method="POST">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="hp">No. HP / WhatsApp</label>
+      <input type="text" id="hp" name="hp" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="confirmPassword">Konfirmasi Password</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required />
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="terms" name="terms" />
+        <label for="terms">Saya setuju dengan syarat & ketentuan</label>
+      </div>
+
+      <button type="submit" class="submit-btn">DAFTAR</button>
+    </form>
+
+    <div class="login-link">
+      <p>Sudah punya akun? <a href="login.html">Login</a></p>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galeri Santri</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f3f8f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #42958d;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    a.back-link {
+      display: inline-block;
+      margin-top: 30px;
+      color: #42958d;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    
+    .galeri {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .galeri img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Responsive: max 2 kolom saat layar kecil */
+    @media (max-width: 768px) {
+      .galeri {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .galeri {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Galeri Santri</h1>
+
+  <div class="galeri">
+    <img src="pangersa.jpg" alt="Muhadhoroh">
+    <img src="muhadarah2.jpg" alt="Santri 2">
+    <img src="ngaji3.jpg" alt="Santri 3">
+    <img src="santriyyat.jpg" alt="Santri 4">
+    <img src="santriyyin.jpg" alt="Santri 5">
+    <img src="santriyyat2.jpg" alt="Muhadhoroh">
+    <img src="santriyyat3.jpg" alt="Muhadhoroh">
+    <img src="ngaji4.jpg" alt="Muhadhoroh">
+  </div>
+
+  <a class="back-link" href="dashboard.html">← Kembali ke Beranda</a>
+</main>
+</body>
+</html>
